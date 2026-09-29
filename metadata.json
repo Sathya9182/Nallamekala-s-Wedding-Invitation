@@ -1,0 +1,6 @@
+{
+  "name": "Sri Kalyanam - South Indian Andhra Wedding Invitation",
+  "description": "An authentic, elegant South Indian Andhra wedding invitation in English and Telugu, featuring a traditional Kalyana Mandapam entrance, rose water welcome, and auspicious ceremonies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

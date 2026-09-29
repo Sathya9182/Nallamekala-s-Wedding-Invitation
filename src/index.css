@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF9F5;
+    color: #2C2723;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-telugu {
+  font-family: 'Noto Serif Telugu', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.royal-crest-glow {
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.35), inset 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Elegant gold gradient accents */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #996515 0%, #D4AF37 40%, #B8860B 70%, #8C6212 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-bright {
+  background: linear-gradient(135deg, #C59B27 0%, #F5E084 50%, #C59B27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #EDD076 50%, #B8860B 100%);
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+/* Subtle gold foil border shimmer */
+.gold-border-frame {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.15), 0 8px 32px -4px rgba(184, 134, 11, 0.08);
+}
+
+.gold-inner-frame {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 9999px;
+}
