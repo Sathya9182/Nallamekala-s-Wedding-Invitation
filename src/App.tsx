@@ -88,7 +88,7 @@ export default function App() {
       />
 
       {/* Top Bar with Navigation and Language Switcher */}
-      <div className="pt-0 md:pt-14">
+      <div className="pt-10 sm:pt-14 md:pt-18">
         <TopBar
           language={language}
           onLanguageToggle={() => setLanguage((l) => (l === 'te' ? 'en' : 'te'))}
@@ -99,7 +99,7 @@ export default function App() {
       </div>
 
       {/* Main Content Area - Starts directly with the Patrika Invitation Card */}
-      <main className="relative z-10 px-2 sm:px-4 md:px-14 lg:px-20">
+      <main className="relative z-10 px-4 sm:px-8 md:px-14 lg:px-20">
         
         {/* Main Bilingual Invitation Patrika Card */}
         <div className="my-6 sm:my-8">

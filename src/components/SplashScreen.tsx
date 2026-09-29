@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Languages, Mail, Heart } from 'lucide-react';
 import { weddingData } from '../data/weddingData';
 import { Language } from '../types/wedding';
+import MANGO_TORANAM from '../assets/images/mango_leaf_toranam_1790611944652.jpg';
+import MARIGOLD_VERTICAL from '../assets/images/marigold_garland_vertical_1790611930430.jpg';
 
 interface SplashScreenProps {
   isOpen: boolean;
@@ -10,9 +12,6 @@ interface SplashScreenProps {
   onLanguageChange: (lang: Language) => void;
   onEnterInvitation: () => void;
 }
-
-const MANGO_TORANAM = '/src/assets/images/mango_leaf_toranam_1790611944652.jpg';
-const MARIGOLD_VERTICAL = '/src/assets/images/marigold_garland_vertical_1790611930430.jpg';
 
 export const SplashScreen: React.FC<SplashScreenProps> = ({
   isOpen,
@@ -56,15 +55,15 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({
           <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent opacity-85" />
         </div>
 
-        {/* Flanking Marigold & Jasmine Garlands for Tablet/Desktop */}
-        <div className="pointer-events-none fixed top-16 left-0 bottom-0 z-10 hidden lg:block w-14 xl:w-20 overflow-hidden select-none">
+        {/* Flanking Marigold & Jasmine Garlands for All Screen Sizes */}
+        <div className="pointer-events-none fixed top-11 sm:top-16 left-0 bottom-0 z-10 w-3.5 sm:w-6 md:w-14 xl:w-20 overflow-hidden select-none">
           <img
             src={MARIGOLD_VERTICAL}
             alt="Marigold & Jasmine Garland"
             className="h-full w-full object-cover object-top opacity-90 drop-shadow-sm"
           />
         </div>
-        <div className="pointer-events-none fixed top-16 right-0 bottom-0 z-10 hidden lg:block w-14 xl:w-20 overflow-hidden select-none">
+        <div className="pointer-events-none fixed top-11 sm:top-16 right-0 bottom-0 z-10 w-3.5 sm:w-6 md:w-14 xl:w-20 overflow-hidden select-none">
           <img
             src={MARIGOLD_VERTICAL}
             alt="Marigold & Jasmine Garland"
@@ -79,7 +78,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({
           <div className="flex items-center justify-between mb-3 px-1">
             <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs text-[#8C6212] font-cinzel font-semibold uppercase tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
-              <span>Royal Wedding Invitation</span>
+              <span>Nallamekala's Wedding Invitation</span>
             </div>
 
             <div className="inline-flex items-center p-0.5 bg-[#F2ECDC] rounded-lg border border-[#D4AF37]/40 shadow-2xs">
@@ -158,7 +157,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({
                 {isTe ? weddingData.familyTitleTe : weddingData.familyTitleEn}
               </h2>
               <p className="text-[11px] sm:text-xs text-[#8C7D6D] font-sans">
-                {isTe ? 'కళ్యాణ మహోత్సవ శుభలేఖ' : 'Royal Wedding Invitation'}
+                {isTe ? 'కళ్యాణ మహోత్సవ శుభలేఖ' : "Nallamekala's Wedding Invitation"}
               </p>
             </div>
 
